@@ -383,11 +383,11 @@ class App{
                     return;
                 }
                 const contents = this.#life.restart({
-                    CHR: groups.CHR.get(),
-                    INT: groups.INT.get(),
-                    STR: groups.STR.get(),
-                    MNY: groups.MNY.get(),
-                    SPR: 5,
+                    CHR: groups.CHR.get(100),
+                    INT: groups.INT.get(100),
+                    STR: groups.STR.get(100),
+                    MNY: groups.MNY.get(100),
+                    SPR: 5000,
                     TLT: Array.from(this.#talentSelected).map(({id})=>id),
                 });
                 this.switch('trajectory');
